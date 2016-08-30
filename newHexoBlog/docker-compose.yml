@@ -1,0 +1,7 @@
+hexo:
+    container_name: hexo
+    build: .
+    dockerfile: ./hexo.dockerfile
+    command:  hexo server -p 5000
+    ports:
+        - "5000:5000"
